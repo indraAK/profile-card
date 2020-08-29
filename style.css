@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%;
+   box-sizing: border-box;
+}
+
+html,
+body {
+   width: 100%;
+}
+
+body {
+   background-color: #fafafa;
+   font-family: "Nunito Sans", sans-serif;
+   font-weight: 400;
+   font-size: 1.6rem;
+   line-height: 1.5;
+}
+
+.container {
+   width: 100%;
+   padding: 0 15px;
+   margin: 0 auto;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.card {
+   width: 35rem;
+   margin: 0 auto;
+   border-radius: 0.7rem;
+   border: 1px solid #dedede;
+   overflow: hidden;
+   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+   background-image: url(./img/header-bg.jpeg);
+   background-size: cover;
+   background-position: center center;
+   min-height: 18rem;
+   position: relative;
+}
+
+.card-header .user-img {
+   display: inline-block;
+   max-width: 100%;
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   border: 2px solid #fff;
+   object-fit: cover;
+   vertical-align: middle;
+   user-select: none;
+   -webkit-user-select: none;
+   position: absolute;
+   left: 50%;
+   bottom: 0;
+   transform: translate(-50%, 30%);
+}
+
+.card-content {
+   padding: 5rem 2rem 4rem;
+   text-align: center;
+}
+
+.card-content .description {
+   margin-bottom: 2rem;
+}
+
+.card-content h1 {
+   font-size: 2.3rem;
+   color: #262b40;
+}
+
+.card-content p {
+   font-size: 1.8rem;
+   margin: 0.3rem 0;
+}
+
+.card-content small {
+   font-size: 1.4rem;
+   color: #858585;
+}
+
+.btn {
+   cursor: pointer;
+   border: 1px solid transparent;
+   border-radius: 0.8rem;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: 0.6rem 1rem;
+   margin: 0 0.5rem;
+   font-family: inherit;
+   font-size: 1.3rem;
+   user-select: none;
+   -webkit-user-select: none;
+   transition: background-color 0.1s ease-in, border-color 0.1s ease-in,
+      box-shadow 0.1s ease-in;
+}
+
+.btn-dark i {
+   margin-right: 0.7rem;
+}
+
+.btn-dark {
+   background-color: #262b40;
+   color: #fff;
+}
+
+.btn-yellow {
+   background-color: #f8bd7a;
+   color: #000000;
+}
+
+.btn-dark:hover {
+   background-color: #181b28;
+}
+
+.btn-yellow:hover {
+   background-color: #f6ab56;
+}
+
+.btn-dark:focus {
+   outline: 0;
+   background-color: #181b28;
+   border-color: #131620;
+   box-shadow: 0 0 0 0.2rem rgba(71, 75, 93, 0.5);
+}
+
+.btn-yellow:focus {
+   outline: 0;
+   background-color: #f6ab56;
+   border-color: #f5a54a;
+   box-shadow: 0 0 0 0.2rem rgba(245, 165, 74, 0.493);
+}
+
+/* SETTING MEDIA FOR CONTAINER */
+@media screen and (min-width: 576px) {
+   .container {
+      max-width: 570px;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .container {
+      max-width: 700px;
+   }
+}
+
+@media screen and (min-width: 992px) {
+   .container {
+      max-width: 920px;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .container {
+      max-width: 1140px;
+   }
+}
